@@ -1,0 +1,59 @@
+$radioButtonSize: 2rem;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  & > h5 {
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.custom_radio {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  input {
+    display: none;
+
+    &:checked ~ .custom_radio_content:after {
+      transform: scale(0.5);
+    }
+  }
+
+  &_content {
+    padding-left: 45px;
+    position: relative;
+    line-height: $radioButtonSize;
+
+    h5 {
+      font-size: 16px;
+      font-family: var(--font-outfit);
+      color: black;
+      margin: 0;
+    }
+    p {
+      font-size: 16px;
+      color: #666666;
+    }
+
+    &::before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: $radioButtonSize;
+      height: $radioButtonSize;
+      border: 2px solid var(--primary);
+      background-color: white;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+    }
+
+    &:after {
+      background-color: var(--primary);
+      transform: scale(0);
+      transition: 0.3s;
+    }
+  }
+}

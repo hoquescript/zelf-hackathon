@@ -9,15 +9,15 @@ const Summary = () => {
         <p>Total views</p>
       </div>
       <div className={styles.summary}>
-        <h5>95k</h5>
+        <h5>6k</h5>
         <p>Total likes</p>
       </div>
       <div className={styles.summary}>
-        <h5>95k</h5>
+        <h5>12k</h5>
         <p>Total comments</p>
       </div>
       <div className={styles.summary}>
-        <h5>95k</h5>
+        <h5>16.8%</h5>
         <p>Engagement Rates</p>
       </div>
     </div>

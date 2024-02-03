@@ -72,7 +72,7 @@ const ANALYTICS_COLUMN: IColumn[] = [
     label: "Actions",
     accessor: "id",
     align: "right",
-    cell(value) {
+    cell(value, _, index) {
       return (
         <Link className={styles.viewPost} href={`/?post=${value}`}>
           View Post
