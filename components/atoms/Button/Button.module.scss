@@ -1,0 +1,25 @@
+// @import "../../../styles/partials/variables";
+.button {
+  padding: 1rem 2rem;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  border-radius: 2px;
+}
+
+.outlined {
+  color: var(--primary);
+  transition: border 0.3s;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid var(--primary);
+  }
+}
+
+.filled {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  &:hover {
+    background-color: lighten($color: #3354ff, $amount: 5);
+  }
+}
