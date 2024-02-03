@@ -1,0 +1,21 @@
+.summaries {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e3e4e8;
+  padding: 1.6rem 2.4rem;
+}
+
+.summary {
+  text-align: center;
+  h5 {
+    font-family: var(--font-poppins);
+    font-size: 1.7rem;
+  }
+  p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #767b8a;
+    font-family: var(--font-inter);
+  }
+}

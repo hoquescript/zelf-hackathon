@@ -15,7 +15,7 @@ interface Post {
   actions: string;
 }
 
-export const ADMIN_DATA: any[] = [
+export const ANALYTIC_DATA: any[] = [
   {
     id: "Post1",
     date: "Sep 06",
@@ -33,4 +33,4 @@ export const ADMIN_DATA: any[] = [
   },
 ];
 
-export default ADMIN_DATA;
+export default ANALYTIC_DATA;

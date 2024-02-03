@@ -5,9 +5,9 @@
   text-overflow: ellipsis;
   overflow-wrap: break-word;
   &__readmore {
-    font-size: 14px;
-    color: #484848;
-    font-weight: bold;
+    font-size: 1.5rem;
     cursor: pointer;
+    font-family: var(--font-inter);
+    text-align: left;
   }
 }

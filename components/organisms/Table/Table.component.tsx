@@ -1,4 +1,4 @@
-import { ADMIN_DATA } from "@/data/Analytics";
+import { ANALYTIC_DATA } from "@/data/Analytics";
 import React, { useState } from "react";
 
 import styles from "./Table.module.scss";
@@ -76,7 +76,7 @@ const Table: React.FC<TableProps> = (props) => {
         </tr>
       </thead>
       <tbody>
-        {ADMIN_DATA.map((row) => (
+        {ANALYTIC_DATA.map((row) => (
           <tr key={row.id}>
             {ANALYTICS_COLUMN.map((column) => (
               <td key={column.accessor} style={{ width: column.width, textAlign: column.align }}>
