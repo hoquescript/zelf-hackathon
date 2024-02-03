@@ -5,6 +5,7 @@ const Homepage = () => {
   return (
     <Fragment>
       <Table
+        className="mt-30"
         data={[
           {
             id: 1,

@@ -1,0 +1,13 @@
+.content {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  &__readmore {
+    font-size: 14px;
+    color: #484848;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

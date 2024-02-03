@@ -1,41 +1,3 @@
-const ADMIN_COLUMNS = [
-  {
-    label: "Date",
-    accessor: "date",
-  },
-  {
-    label: "Video",
-    accessor: "content",
-  },
-  {
-    label: "Creator",
-    accessor: "id",
-  },
-  {
-    label: "Platform",
-    accessor: "platform",
-  },
-  {
-    label: "Total Views",
-    accessor: "views",
-    hasSort: true,
-  },
-  {
-    label: "Total Engagement",
-    accessor: "engagement",
-    hasSort: true,
-  },
-  {
-    label: "Engagement Rate",
-    accessor: "engagementRate",
-    hasSort: true,
-  },
-  {
-    label: "Actions",
-    accessor: "title",
-  },
-];
-
 interface User {
   image: string;
   email: string;
@@ -53,17 +15,17 @@ interface Post {
   actions: string;
 }
 
-const ADMIN_DATA: Post[] = [
+export const ADMIN_DATA: any[] = [
   {
     id: "Post1",
     date: "Sep 06",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti doloremque fuga exercitationem fugiat, tempore at temporibus ab et earum nulla.",
     user: {
-      image: "",
-      email: "",
+      id: "daisyapa.salam.nin",
+      image: "/avatar_sm.svg",
     },
-    platform: "",
+    platform: "tiktok",
     views: "434k",
     engagement: "140k",
     engagementRate: "9.5%",
@@ -71,4 +33,4 @@ const ADMIN_DATA: Post[] = [
   },
 ];
 
-export default ADMIN_COLUMNS;
+export default ADMIN_DATA;

@@ -1,0 +1,43 @@
+@mixin overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+  font-weight: 600;
+  color: #767b8a;
+}
+
+.content {
+  padding: 0.6rem 1.6rem;
+  background-color: #f1f2f3;
+  border-radius: 10rem;
+  display: flex;
+  margin-right: 1rem;
+  p {
+    margin-left: 1rem;
+    width: 10rem;
+    @include overflow();
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: black;
+  p {
+    width: 10rem;
+    @include overflow();
+  }
+}
+
+.platform {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.viewPost {
+  color: var(--primary);
+}

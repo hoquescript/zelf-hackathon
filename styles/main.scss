@@ -2,3 +2,7 @@
 @import "./partials/mixins";
 @import "./partials/reset";
 @import "./partials/utils";
+
+main {
+  min-height: 90vh;
+}
